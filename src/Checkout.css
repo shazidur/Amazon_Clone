@@ -1,0 +1,29 @@
+.chceckout {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  height: max-content;
+}
+
+.checkout__ad {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.product__list {
+  /* display: flex; */
+  text-align: left;
+  margin-top: 20px;
+}
+
+.product__details > img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.checkout__rating {
+  display: flex;
+}
