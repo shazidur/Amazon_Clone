@@ -22,7 +22,7 @@ function Home() {
 
           <Products
             id="22223234"
-            title="the first product the first product title from the Homefirst product title from the Homefirst product title from the Homefirst product title from the Home title from the Home"
+            title="the first product the first product title m the Homefirst product title from the Homefirst product title from the Home title from the Home"
             price={34.44}
             image="https://cdn.moglix.com/p/8gQuuJRAwu54u.png"
             rating={3}
