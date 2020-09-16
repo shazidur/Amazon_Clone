@@ -12,7 +12,7 @@
   width: 100px;
   object-fit: contain;
   margin: 0 20px;
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 .header__search {
@@ -20,24 +20,25 @@
   flex: 1;
   align-items: center;
   border-radius: 24px;
+  width: 100%;
 }
 
 .header__searchInput {
-  height: 12px;
-  padding: 10px;
+  /* height: 12px; */
+  /* padding: 10px; */
   border: none;
   width: 100%;
 }
 
-.header__hearchIcon {
+.ant-btn-primary {
+  background: #f0c14b;
+  border-color: #f0c14b;
+}
+
+.header__searchIcon {
   padding: 5px;
   height: 22px !important;
   background-color: burlywood;
-}
-
-.header__nav {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .header__option {
@@ -58,7 +59,17 @@
 }
 
 .header__optionBasket {
-  color: white;
   display: flex;
+  color: white;
   align-items: center;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
 }
