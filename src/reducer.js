@@ -21,7 +21,6 @@ export const reducer = (state, action) => {
       );
       let newBasket = [...state.basket];
       if (index >= 0) {
-        console.log("index---", index);
         newBasket.splice(index, 1);
       } else {
         console.warn(
