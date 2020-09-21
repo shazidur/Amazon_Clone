@@ -15,6 +15,12 @@ export const reducer = (state, action) => {
         basket: [...state.basket, action.item],
       };
 
+    case "EMPTY_BASKET":
+      return {
+        ...state,
+        basket: [],
+      };
+
     case "REMOVE_FROM_BASKET":
       console.log(" Remove state 1", state.basket, "Action ID ", action);
       const index = state.basket.findIndex(
