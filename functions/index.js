@@ -17,6 +17,9 @@ app.use(express.json());
 
 // API routes
 app.get("/", (request, response) => response.status(200).send("Hello word"));
+app.get("/shazid", (request, response) =>
+  response.status(200).send("Hi baby... ")
+);
 
 app.post("/payments/create", async (request, response) => {
   const total = request.query.total;
