@@ -7,6 +7,7 @@ import { Input } from "antd";
 import { auth } from "./Firebase";
 
 import { useStateValue } from "./StateProvider";
+import { colors } from "@material-ui/core";
 
 function Header() {
   const { Search } = Input;
@@ -33,22 +34,23 @@ function Header() {
       <div className="header__nav">
         <div onClick={authenticationHandler} className="header__option">
           <span className="header__optionLineOne">
-            {" "}
             Hi {user ? user?.email : "Guste"}
           </span>
           <Link to={!user && "/login"}>
-            <span className="Header__optionLineTwo">
+            <span style={{ fontWeight: 800, color: "white" }}>
               {user ? "Sign Out" : "Sign in"}
             </span>
           </Link>
         </div>
-        <div className="header__option">
-          <span className="header__optionLineOne">Return</span>
-          <span className="Header__optionLineTwo"> & Order </span>
-        </div>
+        <Link to="/orders">
+          <div className="header__option">
+            <span className="header__optionLineOne">Return</span>
+            <span style={{ fontWeight: 800 }}> & Order </span>
+          </div>
+        </Link>
         <div className="header__option">
           <span className="header__optionLineOne">Your</span>
-          <span className="Header__optionLineTwo"> Prime </span>
+          <span style={{ fontWeight: 800 }}>Prime</span>
         </div>
         <Link to="/checkout">
           <div className="header__optionBasket">
