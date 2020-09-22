@@ -3,6 +3,7 @@ import "./App.css";
 import "antd/dist/antd.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { auth } from "./Firebase"; // Firebase authentication
+import "react-alice-carousel/lib/alice-carousel.css";
 
 import Header from "./Header";
 import Home from "./Home";

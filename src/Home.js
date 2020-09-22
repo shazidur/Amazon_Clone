@@ -1,16 +1,26 @@
 import React from "react";
 import "./Home.css";
 import Products from "./Products";
+import AliceCarousel from "react-alice-carousel";
+
+import "react-alice-carousel/lib/alice-carousel.css";
+import image1 from "./slider/1.jpg";
+import image2 from "./slider/2.jpg";
+import image3 from "./slider/3.jpg";
+import image4 from "./slider/4.jpg";
 
 function Home() {
   return (
     <div className="home">
       <div className="home__container">
-        <img
-          className="home__imag"
-          src="https://m.media-amazon.com/images/G/31/INAssociates/Wordpress_linkbuiler_banner._SL1280_.jpg"
-          alt="AnyImaage"
-        />
+        {/* Slider here */}
+
+        {/* <img className={"home__imag"} src={image1} alt="#" /> */}
+        {/* <img className={"home__imag"} src={image2} alt="food-2" /> */}
+        {/* {/* <img className={"home__imag"} src={image2} alt="food-2" /> */}
+        <img className={"home__imag"} src={image3} alt="food-3" />
+        {/* <img className={"home__imag"} src={image4} alt="food-4" /> */}
+
         <div className="home__row">
           <Products
             id="11"
